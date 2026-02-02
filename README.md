@@ -1,7 +1,5 @@
 # Numerai Stock Market Prediction Project
 
-A complete, production-ready machine learning project for predicting stock market returns using the Numerai Tournament Dataset (v5.0). This project is suitable for a university-level Machine Learning final project.
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -10,8 +8,6 @@ A complete, production-ready machine learning project for predicting stock marke
 - [Quick Start](#quick-start)
 - [Project Components](#project-components)
 - [Results](#results)
-- [Future Improvements](#future-improvements)
-- [Resources](#resources)
 
 ## Overview
 
@@ -271,35 +267,6 @@ def objective(trial):
 - Train meta-model on base predictions
 - More sophisticated ensembling
 - Better than simple averaging
-
-## Resources
-
-### Official Numerai Resources
-- **Website**: https://numer.ai
-- **Forum**: https://forum.numer.ai
-- **Documentation**: https://docs.numer.ai
-- **Example Scripts**: https://github.com/numerai/example-scripts
-
-### Learning Resources
-- **Numerai Tournament Guide**: https://docs.numer.ai/tournament/learn
-- **Time-Series ML**: Study proper temporal validation
-- **Rank Correlation**: Understand Spearman vs Pearson
-- **Ensemble Methods**: Explore stacking and blending
-
-### Community
-- Active forum with thousands of data scientists
-- Weekly tournaments with real monetary stakes
-- Regular webinars and discussions
-
-## Submitting to Numerai
-
-To actually submit predictions to the tournament:
-
-1. Create account at https://numer.ai
-2. Generate API keys in account settings
-3. Create a model and get your model_id
-4. Use the following code:
-
 ```python
 from numerapi import NumerAPI
 
@@ -327,7 +294,6 @@ napi.upload_predictions("data/submission.csv", model_id=model_id)
 - Model training: Varies by model and parameters
 
 ### Era-Based Validation
-**Critical Concept**: Always use era-based or time-based splits for financial data!
 
 - Eras represent time periods (typically weekly)
 - Random splits leak future information
@@ -340,22 +306,3 @@ napi.upload_predictions("data/submission.csv", model_id=model_id)
 - Robust to outliers
 - More stable than Pearson for financial data
 
-## License
-
-MIT License - Feel free to use for educational purposes.
-
-## Author
-
-Machine Learning Student - University Final Project 2024
-
-## Acknowledgments
-
-- Numerai for providing the dataset and platform
-- Scikit-learn and LightGBM teams for excellent ML libraries
-- Open source community for tools and resources
-
----
-
-**Good luck with your machine learning project!** =�=�
-
-For questions or issues, consult the Numerai forum or documentation.
