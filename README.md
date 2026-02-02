@@ -36,32 +36,6 @@ Numerai is a hedge fund that crowdsources machine learning models to predict sto
 - **Ensembling**: Simple and weighted ensemble methods
 - **Live Predictions**: Generate submission-ready predictions
 
-## Project Structure
-
-```
-numerai/
-├── notebooks/                  # Jupyter notebooks
-│   ├── numerai_project.ipynb       # Main notebook with full pipeline
-│   ├── numerai_project_lite.ipynb  # Lite version (recent eras only)
-│   └── numerai_gpu_advanced.ipynb  # GPU-accelerated training
-├── scripts/                    # Python scripts
-│   ├── quick_start.py              # Automated pipeline (all eras)
-│   ├── quick_start_lite.py         # Automated pipeline (recent eras)
-│   ├── verify_setup.py             # Verify installation
-│   ├── check_gpu.py                # Check GPU availability
-│   └── demo_tiny.py                # Minimal demo
-├── data/                       # Data directory (created on first run)
-│   ├── train.parquet               # Training data (downloaded)
-│   ├── validation.parquet          # Validation data (downloaded)
-│   ├── live.parquet                # Live tournament data (downloaded)
-│   └── submission.csv              # Generated predictions
-├── numerai_utils.py            # Reusable utility module
-├── requirements.txt            # Python dependencies
-├── requirements-gpu.txt        # GPU dependencies
-├── pyproject.toml              # Project configuration
-└── README.md                   # This file
-```
-
 
 ## Installation
 
