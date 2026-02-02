@@ -50,15 +50,6 @@ numerai/
 │   ├── verify_setup.py             # Verify installation
 │   ├── check_gpu.py                # Check GPU availability
 │   └── demo_tiny.py                # Minimal demo
-├── docs/                       # Documentation
-│   ├── GETTING_STARTED.md          # Quick start guide
-│   ├── GPU_SETUP.md                # GPU configuration
-│   ├── UV_SETUP.md                 # UV package manager guide
-│   ├── FORMAL_REPORT.md            # Formal project report
-│   └── [other guides...]
-├── deliverables/               # Project deliverables
-│   ├── neurips_2024_draft.tex      # LaTeX paper
-│   └── presentation.pptx           # Project presentation
 ├── data/                       # Data directory (created on first run)
 │   ├── train.parquet               # Training data (downloaded)
 │   ├── validation.parquet          # Validation data (downloaded)
@@ -68,7 +59,6 @@ numerai/
 ├── requirements.txt            # Python dependencies
 ├── requirements-gpu.txt        # GPU dependencies
 ├── pyproject.toml              # Project configuration
-├── CLAUDE.md                   # AI assistant instructions
 └── README.md                   # This file
 ```
 
@@ -117,7 +107,6 @@ jupyter notebook notebooks/numerai_project.ipynb
 uv run jupyter notebook notebooks/numerai_project.ipynb
 ```
 
-See [docs/UV_SETUP.md](docs/UV_SETUP.md) for detailed UV usage instructions.
 
 ## Quick Start
 
