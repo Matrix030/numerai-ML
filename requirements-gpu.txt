@@ -1,0 +1,53 @@
+# Numerai ML Project - GPU Requirements
+# Optimized for NVIDIA RTX 4080 Super (16GB GDDR6X)
+# Requires CUDA 12.1+ and cuDNN 8.9+
+
+# Core data science (same as base)
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+numerapi>=2.18.0
+
+# PyTorch with CUDA support (install separately - see instructions below)
+# torch>=2.1.0+cu121
+# torchvision>=0.16.0+cu121
+# torchaudio>=2.1.0+cu121
+
+# GPU-Accelerated ML Libraries
+lightgbm>=4.0.0  # Supports GPU training
+xgboost>=2.0.0   # GPU tree construction
+catboost>=1.2     # Native GPU support
+
+# Deep Learning
+pytorch-tabnet>=4.0  # Attention-based tabular ML
+
+# Hyperparameter Optimization
+optuna>=3.3.0
+optuna-dashboard>=0.13.0  # Web UI for monitoring
+
+# NVIDIA RAPIDS (optional but recommended for RTX 4080)
+# cudf-cu12>=23.10.0  # GPU DataFrames
+# cuml-cu12>=23.10.0  # GPU scikit-learn
+# cugraph-cu12>=23.10.0  # GPU graph analytics
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0  # Interactive plots
+
+# Jupyter
+jupyter>=1.0.0
+notebook>=7.0.0
+jupyterlab>=4.0.0
+ipywidgets>=8.0.0
+
+# Utilities
+tqdm>=4.65.0
+python-dateutil>=2.8.0
+
+# Monitoring
+py3nvml>=0.2.7  # NVIDIA GPU monitoring
+gpustat>=1.1.1   # GPU statistics
+
+# Performance
+numba>=0.58.0    # JIT compilation
